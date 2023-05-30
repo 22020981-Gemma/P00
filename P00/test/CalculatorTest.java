@@ -36,7 +36,8 @@ public class CalculatorTest {
 			int expected = 5555;
 			assertEquals (expected, actual);
 			}
-	public void testSubtract() {
+	@Test
+	public final void testSubtract() {
 		int a = 9876;
 		int b = 4321;
 		
@@ -46,8 +47,28 @@ public class CalculatorTest {
 		int expected = 5555;
 		assertEquals(expected, actual);
 	}
-	
-	
+	@Test
+	public final void testMultiple() {
+		int a = 11;
+		int b = 505;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.multiple(a, b);
+		
+		int expected = 5555;
+		assertEquals(expected, actual);
+	}
+	@Test
+	public final void testDivide() {
+		int a = 5555;
+		int b = 1;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.divide(a, b);
+		
+		int expected = 5555;
+		assertEquals(expected, actual);
+	}
 
 }
 
